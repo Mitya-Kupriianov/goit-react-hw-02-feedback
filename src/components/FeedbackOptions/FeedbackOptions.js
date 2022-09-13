@@ -8,9 +8,9 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
       <ul className={s.list}>
         {options.map(option => {
           return (
-            <li key={option} className={s.item}>
+            <li key={option}>
               <button
-                className={s.button}
+                className={s.btn}
                 onClick={onLeaveFeedback}
                 option={option}
               >
